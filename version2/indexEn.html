@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="resume.ico" />
+
+		<link href="../support/iconfont-ali/iconfont.css" rel="stylesheet">
+		<link href="../support/iconfont-resume/iconfont.css" rel="stylesheet">
+		<title></title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font: "微软雅黑";
+		}
+
+		ol li,
+		ul li {
+			list-style-type: none;
+		}
+
+		body {
+			background-color: #f8f8f8;
+			display: flex;
+			justify-content: center;
+		}
+
+		#a4 {
+			width: 1240px;
+			border: 1px solid #e9e9e9;
+			background-color: #fff;
+			display: flex;
+			justify-content: center;
+		}
+
+		#resume-container {
+			display: flex;
+			width: 90%;
+			margin: 70px 0;
+			box-shadow: 0 0 40px #bdbdbd;
+		}
+
+		.container-part {
+			display: flex;
+			/* 浏览器打印预览背景颜色 */
+			-webkit-print-color-adjust: exact;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		#container-left {
+			/* box-flex: 3;
+			-webkit-box-flex: 3;
+			-moz-box-flex: 3;
+			-webkit-flex: 3;
+			-ms-flex: 3; */
+			flex: 2.5;
+			background-color: #284664;
+			color: #fff;
+		}
+
+		#container-right {
+			/* box-flex: 7;
+			-webkit-box-flex: 7;
+			-moz-box-flex: 7;
+			-webkit-flex: 7;
+			-ms-flex: 7; */
+			flex: 7.5;
+		}
+
+		#avatar {
+			width: 140px;
+			height: 200px;
+			overflow: hidden;
+			border: 6px solid rgba(255, 255, 255, 0.9);
+			margin: 50px 0;
+		}
+
+		#self-info,
+		#tech-stack {
+			width: 90%;
+		}
+
+		#self-info li {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 22px 0;
+		}
+
+		#self-info li .iconfont {
+			font-size: 20px;
+		}
+
+		#self-info li .desc {
+			margin-left: 5px;
+		}
+
+		#tech-stack {
+			margin-top: 22px;
+		}
+
+		#tech-stack li {
+			margin: 22px 0;
+		}
+
+		#tech-stack li>div {
+			margin: 10px 0;
+			letter-spacing: 1px;
+			text-align: justify;
+			text-justify: distribute-all-lines; // 这行必加，兼容ie浏览器
+			text-align-last: justify;
+		}
+
+		#tech-stack .bar-back {
+			width: 100%;
+			height: 10px;
+			background-color: #f8f8f863;
+		}
+
+		#tech-stack .bar-percentage {
+			overflow: hidden;
+		}
+
+		#tech-stack .bar {
+			display: flex;
+			justify-content: space-evenly;
+			height: inherit;
+			/* --bar-width: 158.896; */
+		}
+
+		#tech-stack .bar>div {
+			height: 10px;
+			flex: 2.5;
+		}
+
+		#tech-stack .bar>.understand {
+			background-color: #cee93e;
+			/* width: calc(0.25*var(--bar-width)*1px); */
+		}
+
+		#tech-stack .bar>.experienced {
+			background-color: #f6bc24;
+			/* width: calc(0.25*var(--bar-width)*1px); */
+		}
+
+		#tech-stack .bar>.familiar {
+			background-color: #f85416;
+			/* width: calc(0.25*var(--bar-width)*1px); */
+		}
+
+		#tech-stack .bar>.proficient {
+			background-color: #d00664;
+			/* width: calc(0.25*var(--bar-width)*1px); */
+		}
+		.language-box {
+			display: flex;
+			justify-content: center;
+			width: 50px;
+		}
+		
+		.languageLogo {
+			color: #000b;
+			font-size: 20px;
+			text-align: center;
+			cursor: pointer;
+		}
+		
+		.language-ul {
+			display: none;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.languageLogo:hover .language-ul {
+			display: flex;
+		}
+	</style>
+	<body>
+		<div class="language-box" style="position: fixed;top:0;right:0;">
+			<span class="languageLogo iconfont icon-multi-language" />
+			<ul class="language-ul">
+				<li><a href="index.html">中文</a></li>
+				<li><a href="indexEn.html">English</a></li>
+			</ul>
+		</div>
+		<div id="a4">
+			<div id="resume-container">
+				<div id="container-left" class="container-part">
+					<!-- 头像 -->
+					<img id="avatar" src="img/avatar.jpg">
+					<!-- 简单信息 -->
+					<ul id="self-info">
+						<li>
+							<div class="iconfont icon-account-fill"></div>
+							<div class="desc">25 years old</div>
+						</li>
+						<li>
+							<div class="iconfont icon-map1"></div>
+							<div class="desc">Dachuan District, Dazhou City, Sichuan Province</div>
+						</li>
+						<li>
+							<div class="iconfont icon-phone1"></div>
+							<div class="desc">(+86) 15983865042</div>
+						</li>
+						<li>
+							<div class="iconfont icon-email-fill"></div>
+							<div class="desc">qgao233@163.com</div>
+						</li>
+					</ul>
+					<!-- 技术栈： 了解(understand)/掌握(Experienced at)/熟练(Familiar with)/精通(Proficient in) -->
+					<ul id="tech-stack">
+						<li>
+							<div>linux command/shell</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 20%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.2);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>rocketMQ and micro-service framework: openFeign and nacos</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 15%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.15);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>Hadoop and Spark</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 10%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.1);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>web development (Html/css/js/jquery)</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 40%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.4);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>mobile development (react-native, redux data state management, and the Router routing
+								management)</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 45%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.45);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>redis</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 40%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.4);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>multi-thread concurrency development</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 45%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.45);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>Java development</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 72%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.72);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>Spring Framework consists of springBoot, springMVC, IOC and AOP</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 70%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.7);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>mysql and database middleware between mysql and java: mybatis</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 70%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.7);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>development tools like Git, idea, etc.</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 90%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.9);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<style>
+						.hobby-title {
+							width: 90%;
+							color: #f8f8f8c9;
+							margin: 42px 0 20px 0;
+							font-size: 30px;
+							font-weight: bold;
+						}
+
+						#hobby {
+							width: 90%;
+							display: flex;
+							justify-content: flex-start;
+							flex-wrap: wrap;
+						}
+
+						#hobby>li {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							margin: 5px 0px;
+							margin-right: 30px;
+						}
+
+						#hobby>li>div {
+							color: #f8f8f8c9;
+							margin: 5px 0;
+						}
+
+						#hobby>li>div:first-child {
+							font-size: 40px;
+						}
+					</style>
+					<div class="hobby-title">hobby</div>
+					<ul id="hobby">
+						<li>
+							<div class="iconfont icon-yinle"></div>
+							<div>music</div>
+						</li>
+
+						<li>
+							<div class="iconfont icon-pingpangqiu"></div>
+							<div>table tennis</div>
+						</li>
+						<li>
+							<div class="iconfont icon-yule"></div>
+							<div>game</div>
+						</li>
+						<li>
+							<div class="iconfont icon-yumaoqiu"></div>
+							<div>badminton</div>
+						</li>
+					</ul>
+					<div style="height:50px;"></div>
+				</div>
+				<style>
+					#name,
+					#target {
+						color: #284664;
+						margin-top: 40px;
+					}
+
+					#name {
+						font-size: 50px;
+						font-weight: bold;
+					}
+
+					#target {
+						font-size: 20px;
+						font-weight: 100;
+						margin-top: 10px;
+					}
+
+					#profile-list {
+						margin-top: 20px;
+					}
+
+					#profile-list>li {
+						padding-top: 20px;
+					}
+
+					#profile-list>li>div:first-child {
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+					}
+
+					#profile-list>li>div:first-child>div:first-child div {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: #284664;
+						color: #fff;
+						width: 50px;
+						height: 50px;
+						border-radius: 25px;
+						margin-right: 10px;
+						flex: 1;
+						font-size: 30px;
+						font-weight: bold;
+					}
+
+					#profile-list>li>div:first-child>div:last-child {
+						color: #284664;
+						border-bottom: 2px solid #284664;
+						flex: 9;
+						font-size: 30px;
+						font-weight: bold;
+					}
+
+					.list li {
+						display: flex;
+						margin: 10px 0;
+					}
+
+					.date {
+						flex: 3;
+						font-weight: bold;
+					}
+
+					.location {
+						flex: 4;
+						font-weight: bold;
+					}
+
+					.head-title {
+						flex: 3;
+						font-weight: bold;
+					}
+					.special-list li {
+						list-style-type: disc;
+						margin-left: 20px;
+					}
+					a{
+						color: #3b3b3b;
+						font: 12px/1.5 "微软雅黑";
+						text-decoration: none;
+					}
+					}
+				</style>
+				<div id="container-right" class="container-part">
+					<div style="width: 90%;">
+						<div id="name">Qiang Gao</div>
+						<div id="target">Job target: Java development engineer</div>
+						<ul id="profile-list">
+							<li id="education">
+								<div>
+									<div>
+										<div class="iconfont icon-xuexi"></div>
+									</div>
+									<div>Education background</div>
+								</div>
+								<div>
+									<ul class="list">
+										<li>
+											<div class="date">2015.9-2019.6</div>
+											<div class="location">Chengdu University</div>
+											<div class="head-title">Software Engineering (Bachelor)</div>
+										</li>
+										<li>
+											<div class="date">2019.9-2021.8</div>
+											<div class="location">Japan Prefectural University of Hiroshima</div>
+											<div class="head-title">Information Management Engineering (Master)</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li id="school">
+								<div>
+									<div>
+										<div class="iconfont icon-24gf-school"></div>
+									</div>
+									<div>Campus experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2016.9-2017.1</div>
+													<div class="location">On-campus archor project team</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<div>'Love Questionnaire' System</div>
+											<ul class="special-list">
+												<li>Responsible for demand analysis, technical solution research,
+													technology implementation and etc.</li>
+												<li>Won the first prize of the National Project of Innovation Training
+													Program for College Students.</li>
+												<li>Won the second prize of individual competition and the second prize
+													of the team competition in the Lanqiao Cup</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2017.4-2017.6</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Professor assistant</div>
+												</li>
+											</ul>
+											<div>Teaching materials</div>
+											<ul class="special-list">
+												<li>Responsible for assisting professors in writing teaching materials in the direction of javaWeb.</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2018.5-2019.4</div>
+													<div class="location">On-campus independent</div>
+													<div class="head-title">Full stack development</div>
+												</li>
+											</ul>
+											<div>Personal blog</div>
+											<ul class="special-list">
+												<li>Responsible for full-stack processes such as database design, front-end page development, and back-end interface implementation (separation of front-end and back-end).</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2019.10-2021.7</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Professor assistant</div>
+												</li>
+											</ul>
+											<div>Resource preparation & Research topic</div>
+											<ul class="special-list">
+												<li>Responsible for assisting professors in managing student-related matters.</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2019.10-2021.7</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Emulation and Publishment</div>
+												</li>
+											</ul>
+											<div>Post-disaster obstacle avoidance routing protocol in the Delay-Tolerant network</div>
+											<ul class="special-list">
+												<li>Responsible for background research, put forward deficiencies and solutions, conduct simulation experiments and data analysis.</li>
+												<li>Published two international papers (BWCCA and IMIS) and one springer journal.</li>
+											</ul>
+										</li>
+									</ul>
+
+								</div>
+							</li>
+							<li id="work">
+								<div>
+									<div>
+										<div class="iconfont icon-gongzuo"></div>
+									</div>
+									<div>Work experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2022.4.11-2022.6</div>
+													<div class="location">Shanghai Citigroup Services and Technology (China) Co. Ltd.</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<ul class="special-list">
+												<li>Main responsibilities:
+													<ul>
+														<li>Participate in middleware development about data process, which consists of processing data from upstream -> transport to somewhere downstream.</li>
+														<li>Participate in code joint testing and maintenance in production environment in the later period.</li>
+													</ul>
+												</li>
+												<li>Key Achievements:
+													<ul>
+														<li>Participate in bug fixing of project framework.</li>
+														<li>Participate in optimization of project code including removing redundant codes, adjusting class structure about code and solving thread security by threadLocal.</li>
+														<li>Participate in reconstruction of project including design of underlying structure and code migrating.</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+							
+								</div>
+							</li>
+							<li id="project">
+								<div>
+									<div>
+										<div class="iconfont icon-xiangmu"></div>
+									</div>
+									<div>Project experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2021.4-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: SpringBoot+SpringMVC+Mybatis+Mysql+Shiro+Redis, and try to use Nacos and openFeign</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for market research, vertical demand division and analysis.</li>
+														<li>Responsible for database structure design, back-end technical architecture selection.</li>
+														<li>Responsible for code interface development.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoBackEnd">https://github.com/qgao233/qgaoBackEnd</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2021.6-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">Front-end web development</div>
+												</li>
+											</ul>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: html5+css+js+jquery</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for interface UI design, structure construction.</li>
+														<li>Responsible for facade development and connect with the back-end interface.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoWebPage">https://github.com/qgao233/qgaoWebPage</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2021.9-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">App development (android side)</div>
+												</li>
+											</ul>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: react-native+redux</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for technology selection, framework construction, ui design.</li>
+														<li>Responsible for facade development and connect with the back-end interface.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoApp">https://github.com/qgao233/qgaoApp</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2022.4.11-2022.6</div>
+													<div class="location">Shanghai Citigroup Services and Technology (China) Co. Ltd.</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<div>Input Gathering</div>
+											<ul class="special-list">
+												<li>Technologies: Java, Spring, Oracle</li>
+												<li>Main tasks:
+													<ul>
+														<li>Confirm requirements by use of jira.</li>
+														<li>Complete back-end development.</li>
+														<li>Joint debugging with other projects.</li>
+														<li>Complete bug fixing during dev testing.</li>
+														<li>Code commitment.</li>
+														<li>Follow-up code maintenance.</li>
+													</ul>
+												</li>
+												<li>Key Achievements:
+													<ul>
+														<li>Familiar with the complete project process.</li>
+														<li>Optimize the project, follow the design development in the project, and get used to project review after the project.</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+							
+								</div>
+							</li>
+							<li id="summary">
+								<div>
+									<div>
+										<div class="iconfont icon-zongjie"></div>
+									</div>
+									<div>Self-summary</div>
+								</div>
+								<div>
+									<ul class="special-list">
+										<li>Not only back-end but also front-end development experience, familiar with related platforms and tools.</li>
+										<li>Good basic knowledge;</li>
+										<li>BS related major, Technical driven, with good communication and logical thinking;</li>
+										<li>Positive English user, adapt to English working environment;</li>
+										<li>Dependent Personal Project: IDEAs, dedicated to providing ideas for different groups of people (Full stack including web interface, back-end development and mobile development)</li>
+									</ul>
+								</div>
+							</li>
+							<li id="evaluation">
+								<div>
+									<div>
+										<div class="iconfont icon-pingjia"></div>
+									</div>
+									<div>Self-evaluation</div>
+								</div>
+								<div style="text-align: justify;">
+									I have a down-to-earth, hard-working and serious research spirit. In both the undergraduate and postgraduate stages, I can find out the problems that already exist in the project in time, and solve them in advance through the relevant knowledge I already know. Even if there are temporary problems, I can independently and quickly locate the problem and solve it quickly and effectively.
+								</div>
+								<ul class="special-list">
+									<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoStudyNotes">https://github.com/qgao233/qgaoStudyNotes</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div style="height:50px;"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
