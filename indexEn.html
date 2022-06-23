@@ -1,64 +1,15 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
-		<meta name="keywords" content="Java Development Engineer">
-		<meta name="description"
-			content="I work steadily, take work seriously, have a strong sense of responsibility, treat people sincerely, be good at communication, always keep learning and actively embrace change. Have the ability to develop and analyze Java software, and have the ability to work and analyze Java software quickly.">
-		<title>resume</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/new.css" media="all">
-		<link rel="stylesheet" href="css/bootstrap.min.css?v=2159">
-		<link rel="stylesheet" href="css/zxbj_base.css?v=2818">
-		<link rel="stylesheet" href="css/jm0203.css">
-		<link href="support/iconfont-ali/iconfont.css" rel="stylesheet">
+		<link rel="shortcut icon" href="resume.ico" />
 
-		<style>
-			.m-nav-ul .nav_li:nth-child(3) a.erji_a {
-				color: #F66000;
-			}
-
-			.m-nav-ul .nav_li:nth-child(3) a.triangle {
-				border-color: #F66000;
-			}
-
-			.m-top_user li a {
-				box-sizing: content-box;
-				-moz-box-sizing: content-box;
-				-webkit-box-sizing: content-box;
-			}
-
-			.m-erjinav-ul {
-				margin-top: 25px;
-			}
-
-			.language-box {
-				display: flex;
-				justify-content: center;
-				width: 50px;
-			}
-
-			.languageLogo {
-				color: #000b;
-				font-size: 20px;
-				text-align: center;
-				cursor: pointer;
-			}
-
-			.language-ul {
-				display: none;
-				flex-direction: column;
-				align-items: center;
-			}
-
-			.languageLogo:hover .language-ul {
-				display: flex;
-			}
-		</style>
+		<link href="../support/iconfont-ali/iconfont.css" rel="stylesheet">
+		<link href="../support/iconfont-resume/iconfont.css" rel="stylesheet">
+		<link href="./css/resume.css" rel="stylesheet">
+		<title>Resume[Qiang Gao]</title>
 	</head>
-
-	<body style="height:auto;background:#f8f8f8;">
+	<body>
 		<div class="language-box" style="position: fixed;top:0;right:0;">
 			<span class="languageLogo iconfont icon-multi-language" />
 			<ul class="language-ul">
@@ -66,693 +17,497 @@
 				<li><a href="indexEn.html">English</a></li>
 			</ul>
 		</div>
-		<div class="n_dispage_jm">
-			<div class="n_dispage_jm_in resetEditStyle">
-
-				<!--编辑区域-->
-
-				<div class="baseStyle clearfix jm0203_j1" id="resume_body">
-					<div class="divLeft clearfix" id="bar">
-
-						<!--头像-->
-
-						<div data-toggle="modal" data-target="#myModalHead" class="headDiv" id="resume_head"> <span
-								class="headNotice">点击替换头像</span> <img class="resume_head" src="img/avatar.jpg"
-								height="200"> </div>
-						<div id="bar_sort"></div>
-
-						<!--基本信息-->
-
-						<div class="msgDiv positonDiv resume_add_area resume_sort" id="resume_msg">
-							<div class="baseAge baseMsg baseDel" id="resume_age">
-								<div class="delete resume_hidden" for-id="resume_age"></div>
-								<a class="resume_icon_diy icon wbdfont" for-id="age" style="font-size:none"></a>
-								<input class="baseBorder resume_msg resume_lang_age" for-key="age" placeholder="年龄/生日"
-									value="25 years old">
+		<div id="a4">
+			<div id="resume-container">
+				<div id="container-left" class="container-part">
+					<!-- 头像 -->
+					<img id="avatar" src="img/avatar.jpg">
+					<!-- 简单信息 -->
+					<ul id="self-info">
+						<li>
+							<div class="iconfont icon-account-fill"></div>
+							<div class="desc">25 years old</div>
+						</li>
+						<li>
+							<div class="iconfont icon-map1"></div>
+							<div class="desc">Dachuan District, Dazhou City, Sichuan Province</div>
+						</li>
+						<li>
+							<div class="iconfont icon-phone1"></div>
+							<div class="desc">(+86) 15983865042</div>
+						</li>
+						<li>
+							<div class="iconfont icon-email-fill"></div>
+							<div class="desc">qgao233@163.com</div>
+						</li>
+					</ul>
+					<!-- 技术栈： 了解(understand)/掌握(Experienced at)/熟练(Familiar with)/精通(Proficient in) -->
+					<ul id="tech-stack">
+						<li>
+							<div>linux command/shell</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 20%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.2);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
 							</div>
-							<div class="baseAddress baseMsg baseDel" id="resume_address">
-								<div class="delete resume_hidden" for-id="resume_address"></div>
-								<a class="resume_icon_diy icon wbdfont" for-id="address" style="font-size:none"></a>
-								<input class="resume_msg baseBorder resume_lang_address" for-key="address"
-									placeholder="联系地址" value="Dachuan District, Dazhou City, Sichuan Province">
+						</li>
+						<li>
+							<div>rocketMQ and micro-service framework: openFeign and nacos</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 15%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.15);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
 							</div>
-							<div class="baseMobile baseMsg baseDel" id="resume_mobile">
-								<div class="delete resume_hidden" for-id="resume_mobile"></div>
-								<a class="resume_icon_diy icon wbdfont" for-id="mobile" style="font-size:none"></a>
-								<input class="resume_msg baseBorder resume_lang_mobile" for-key="mobile"
-									placeholder="联系电话" value="15983865042">
+						</li>
+						<li>
+							<div>Hadoop and Spark</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 10%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.1);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
 							</div>
-							<div class="baseEmail baseMsg baseDel" id="resume_email">
-								<div class="delete resume_hidden" for-id="resume_email"></div>
-								<a class="resume_icon_diy icon wbdfont" for-id="email" style="font-size:none"></a>
-								<input class="resume_msg baseBorder resume_lang_email" for-key="email"
-									placeholder="电子邮箱" value="qgao233@163.com">
+						</li>
+						<li>
+							<div>web development (Html/css/js/jquery)</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 40%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.4);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
 							</div>
-						</div>
+						</li>
+						<li>
+							<div>mobile development (react-native, redux data state management, and the Router routing
+								management)</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 45%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.45);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>redis</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 40%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.4);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>multi-thread concurrency development</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 45%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.45);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>Java development</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 72%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.72);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>Spring Framework consists of springBoot, springMVC, IOC and AOP</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 70%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.7);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>mysql and database middleware between mysql and java: mybatis</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 70%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.7);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div>development tools like Git, idea, etc.</div>
+							<div class="bar-back">
+								<div class="bar-percentage" style="width: 90%;">
+									<!-- 这个20%要和下面一行的0.2对上 -->
+									<div class="bar" style="width: calc(100% / 0.9);">
+										<div class="understand"></div>
+										<div class="experienced"></div>
+										<div class="familiar"></div>
+										<div class="proficient"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="hobby-title">hobby</div>
+					<ul id="hobby">
+						<li>
+							<div class="iconfont icon-yinle"></div>
+							<div>music</div>
+						</li>
 
-						<!--个人技能-->
-
-						<div class="skillDiv positonDiv resume_add_area resume_graph resume_sort" id="resume_graph">
-							<ul class="skillUl resume_append_area">
-								<li class="baseDel resume_delete_area resume_graph_item">
-									<div class="skillTitle">
-										<input class="resume_value baseBorder" for-key="resume_skill_graph"
-											placeholder="填写你的技能名称" value="HTML5/JavaScript/CSS3/Ajax">
+						<li>
+							<div class="iconfont icon-pingpangqiu"></div>
+							<div>table tennis</div>
+						</li>
+						<li>
+							<div class="iconfont icon-yule"></div>
+							<div>game</div>
+						</li>
+						<li>
+							<div class="iconfont icon-yumaoqiu"></div>
+							<div>badminton</div>
+						</li>
+					</ul>
+					<div style="height:50px;"></div>
+				</div>
+				<div id="container-right" class="container-part">
+					<div style="width: 90%;">
+						<div id="name">Qiang Gao</div>
+						<div id="target">Job target: Java development engineer</div>
+						<ul id="profile-list">
+							<li id="education">
+								<div>
+									<div>
+										<div class="iconfont icon-xuexi"></div>
 									</div>
-									<span><i class="resume_line" for-id="resume_skill_graph"
-											style="width:128px;border-top-style:solid;border-top-width:8px;"></i></span>
-									<div class="delete resume_delete"></div>
-								</li>
-								<li class="baseDel resume_delete_area resume_graph_item">
-									<div class="skillTitle">
-										<input class="resume_value baseBorder"
-											for-key="53815fa3293e57988958e27243b16870" placeholder="填写你的技能名称"
-											value="SpringBoot/SpringMVC/MyBatis">
+									<div>Education background</div>
+								</div>
+								<div>
+									<ul class="list">
+										<li>
+											<div class="date">2015.9-2019.6</div>
+											<div class="location">Chengdu University</div>
+											<div class="head-title">Software Engineering (Bachelor)</div>
+										</li>
+										<li>
+											<div class="date">2019.9-2021.8</div>
+											<div class="location">Japan Prefectural University of Hiroshima</div>
+											<div class="head-title">Information Management Engineering (Master)</div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li id="school">
+								<div>
+									<div>
+										<div class="iconfont icon-24gf-school"></div>
 									</div>
-									<span><i class="resume_line" for-id="53815fa3293e57988958e27243b16870"
-											style="width:128px;border-top-style:solid;border-top-width:8px;"></i></span>
-									<div class="delete resume_delete"></div>
-								</li>
-								<li class="baseDel resume_delete_area resume_graph_item">
-									<div class="skillTitle">
-										<input class="resume_value baseBorder"
-											for-key="0fb2de17b37fd50c14ccda4d9b96bd94" placeholder="填写你的技能名称"
-											value="MySql/Redis">
-									</div>
-									<span><i class="resume_line" for-id="0fb2de17b37fd50c14ccda4d9b96bd94"
-											style="width:128px;border-top-style:solid;border-top-width:8px;"></i></span>
-									<div class="delete resume_delete"></div>
-								</li>
-								<li class="baseDel resume_delete_area resume_graph_item">
-									<div class="skillTitle">
-										<input class="resume_value baseBorder"
-											for-key="0bab43524d96b1b58129f46097ee14b7" placeholder="填写你的技能名称"
-											value="JVM / high concurrency / distributed microservices">
-									</div>
-									<span><i class="resume_line" for-id="0bab43524d96b1b58129f46097ee14b7"
-											style="width:128px;border-top-style:solid;border-top-width:8px;"></i></span>
-									<div class="delete resume_delete"></div>
-								</li>
-							</ul>
-						</div>
-
-						<!--兴趣爱好-->
-
-						<div class="hobbyDiv positonDiv resume_add_area resume_icon resume_sort" id="resume_icon">
-							<dl class="clearfix">
-								<dt><span>
-										<div class="resume_lang_hobby">hobby</div>
-									</span></dt>
-								<dd class="resume_append_area">
-									<div class="hobbyicon baseDel resume_delete_area resume_icon_item">
-										<a class="resume_icon_diy icon wbdfont" for-id="resume_hobby_icon"
-											style="font-size:none"></a> <span class="hobbyTitle">
-											<input class="resume_value baseBorder" for-key="resume_hobby_icon"
-												placeholder="兴趣爱好" value="basketball">
-										</span>
-										<div class="delete resume_delete"></div>
-									</div>
-									<div class="hobbyicon baseDel resume_delete_area resume_icon_item">
-										<a class="resume_icon_diy icon wbdfont"
-											for-id="9eff2552587f9d5970ebab85696208dc" style="font-size:none"></a> <span
-											class="hobbyTitle">
-											<input class="resume_value baseBorder"
-												for-key="9eff2552587f9d5970ebab85696208dc" placeholder="兴趣爱好"
-												value="soccer">
-										</span>
-										<div class="delete resume_delete"></div>
-									</div>
-									<div class="hobbyicon baseDel resume_delete_area resume_icon_item">
-										<a class="resume_icon_diy icon wbdfont"
-											for-id="162b8459a4a82554da5e6a12c2f21c8f" style="font-size:none"></a> <span
-											class="hobbyTitle">
-											<input class="resume_value baseBorder"
-												for-key="162b8459a4a82554da5e6a12c2f21c8f" placeholder="兴趣爱好"
-												value="game">
-										</span>
-										<div class="delete resume_delete"></div>
-									</div>
-									<div class="hobbyicon baseDel resume_delete_area resume_icon_item">
-										<a class="resume_icon_diy icon wbdfont"
-											for-id="b3cf5ddaec3cbe67762a2d8d3df17f17" style="font-size:none"></a> <span
-											class="hobbyTitle">
-											<input class="resume_value baseBorder"
-												for-key="b3cf5ddaec3cbe67762a2d8d3df17f17" placeholder="兴趣爱好"
-												value="record">
-										</span>
-										<div class="delete resume_delete"></div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-					</div>
-					<div class="divRight clearfix resume_main" id="foo">
-
-						<!--姓名、求职意向-->
-
-						<div class="nameDiv positonDiv" id="resume_name">
-							<h1>
-								<div class="resume_msg baseBorder resume_notice resume_lang_name" notice-key="msg"
-									for-key="name" for-value="html" contenteditable="true">Qiang Gao</div>
-							</h1>
-							<h2>
-								<div class="resume_msg baseBorder resume_notice resume_lang_job" notice-key="job"
-									for-key="job" for-value="html" contenteditable="true">Job target: Java development
-									engineer</div>
-							</h2>
-						</div>
-						<div id="foo_sort"></div>
-
-						<!--教育背景-->
-
-						<div class="eduDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice"
-							notice-key="edu" id="resume_edu" for-key="edu">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="edu" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_edu">Education background</div>
-										<div class="Border resume_line" for-id="edu"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">
-													2015.09-2019.06</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">Chengdu
-													University</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Software
-													Engineering (Bachelor)</div>
-											</span>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">
-													2019.09-2021.08</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">Japan
-													Prefectural University of Hiroshima</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Information
-													Management Engineering (Master)</div>
-											</span>
-										</div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-						<!--自我总结-->
-						<div class="selfDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="self"
-							id="resume_self" for-key="self">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="self" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_self">Technical Skills</div>
-										<div class="Border resume_line" for-id="self"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd>
-									<div class="baseContent">
-										<div class="conDisc baseBorder resume_lang_self_value resume_value"
-											contenteditable="true" data-toggle="tooltip" data-placement="top"
-											title="复制粘贴文字请右键-粘贴为纯文本">
-											<ul>
+									<div>Campus experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
 												<li>
-													Understand linux command/shell.
-												</li>
-												Understand rocketMQ and micro-service framework such as openFeign and nacos.
-												<li>
-													Understand Hadoop and Spark.
-												</li>
-												<li>
-													Experienced at web development (Html/css/js/jquery).
-												</li>
-												<li>
-													Experienced at mobile development (react-native, redux data state management, and the Router routing management).
-												</li>
-												<li>
-													Experienced at redis.
-												</li>
-												<li>
-													Experienced at multi-thread concurrency development.
-												</li>
-												<li>
-													Familiar with Java development.
-												</li>
-												<li>
-													Familiar with Spring Framework consists of springBoot, springMVC, IOC and AOP.
-												</li>
-												<li>
-													Familiar with mysql and database middleware between mysql and java: mybatis.
-												</li>
-												<li>
-													Proficient in development tools like Git, idea, etc.
+													<div class="date">2016.9-2017.1</div>
+													<div class="location">On-campus archor project team</div>
+													<div class="head-title">Back-end development</div>
 												</li>
 											</ul>
-										</div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-						<!--校园经历-->
+											<div>'Love Questionnaire' System</div>
+											<ul class="special-list">
+												<li>Responsible for demand analysis, technical solution research,
+													technology implementation and etc.</li>
+												<li>Won the first prize of the National Project of Innovation Training
+													Program for College Students.</li>
+												<li>Won the second prize of individual competition and the second prize
+													of the team competition in the Lanqiao Cup</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2017.4-2017.6</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Professor assistant</div>
+												</li>
+											</ul>
+											<div>Teaching materials</div>
+											<ul class="special-list">
+												<li>Responsible for assisting professors in writing teaching materials in the direction of javaWeb.</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2018.5-2019.4</div>
+													<div class="location">On-campus independent</div>
+													<div class="head-title">Full stack development</div>
+												</li>
+											</ul>
+											<div>Personal blog</div>
+											<ul class="special-list">
+												<li>Responsible for full-stack processes such as database design, front-end page development, and back-end interface implementation (separation of front-end and back-end).</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2019.10-2021.7</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Professor assistant</div>
+												</li>
+											</ul>
+											<div>Resource preparation & Research topic</div>
+											<ul class="special-list">
+												<li>Responsible for assisting professors in managing student-related matters.</li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2019.10-2021.7</div>
+													<div class="location">On-campus</div>
+													<div class="head-title">Emulation and Publishment</div>
+												</li>
+											</ul>
+											<div>Post-disaster obstacle avoidance routing protocol in the Delay-Tolerant network</div>
+											<ul class="special-list">
+												<li>Responsible for background research, put forward deficiencies and solutions, conduct simulation experiments and data analysis.</li>
+												<li>Published two international papers (BWCCA and IMIS) and one springer journal.</li>
+											</ul>
+										</li>
+									</ul>
 
-						<div class="workDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice"
-							notice-key="work" id="resume_work" for-key="work">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="work" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_work">Campus experience</div>
-										<div class="Border resume_line" for-id="work"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2016.9-2017.1
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">On-campus
-													archor project team</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Back-end
-													development</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>'Love Questionnaire' System</p>
-												<p>Responsible for demand analysis, technical solution research,
-													technology implementation and etc.</p>
-												<p>Won the first prize of the National Project of Innovation Training
-													Program for College Students.</p>
-												<p>Won the second prize of individual competition and the second prize
-													of the team competition in the Lanqiao Cup</p>
-											</div>
-										</div>
+								</div>
+							</li>
+							<li id="work">
+								<div>
+									<div>
+										<div class="iconfont icon-gongzuo"></div>
 									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2017.4-2017.6
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true"></div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">teaching
-													assistant</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Responsible for assisting professors in writing teaching materials in
-													the direction of javaWeb.</p>
-											</div>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2018.5-2019.4
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">independent
-												</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">full stack
-												</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Personal blog</p>
-												<p>Responsible for full-stack processes such as database design,
-													front-end page development, and back-end interface implementation
-													(separation of front-end and back-end).</p>
-											</div>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">
-													2019.10-2021.7</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true"></div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">teaching
-													assistant</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Responsible for assisting professors in managing student-related
-													matters.</p>
-											</div>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">
-													2019.10-2021.7</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">
-													Delay-Tolerant Network</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">emulation
-												</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Post-disaster obstacle avoidance routing protocol in the network</p>
-												<p>Responsible for background research, put forward deficiencies and
-													solutions, conduct simulation experiments and data analysis.</p>
-												<p>Published two international papers (BWCCA and IMIS) and one springer
-													journal.</p>
-											</div>
-										</div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-
-						<!--工作经历-->
-
-						<div class="workDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice"
-							notice-key="work" id="resume_work" for-key="work">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="work" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_work">Work experience</div>
-										<div class="Border resume_line" for-id="work"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">
-													2022.4.11-2022.6
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">
-													Shanghai Citigroup Services and Technology (China) Co. Ltd.
-												</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Back-end
-													development</div>
-											</span>
-										</div>
-										<div>
-											<ol>
+									<div>Work experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2022.4.11-2022.6</div>
+													<div class="location">Shanghai Citigroup Services and Technology (China) Co. Ltd.</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<ul class="special-list">
 												<li>Main responsibilities:
 													<ul>
-														<li>Participate in middleware development about data process,
-															which consists of processing data from upstream -> transport
-															to somewhere downstream.</li>
-														<li>Participate in code joint testing and maintenance in
-															production environment in the later period.</li>
-													</ul>
-												</li>
-												<li>Main tasks:
-													<ul>
-														<li>Confirm requirements by use of jira.</li>
-														<li>Complete back-end development.</li>
-														<li>Joint debugging with other projects.</li>
-														<li>Complete bug fixing during dev testing.</li>
-														<li>Code commitment.</li>
-														<li>Follow-up code maintenance.</li>
+														<li>Participate in middleware development about data process, which consists of processing data from upstream -> transport to somewhere downstream.</li>
+														<li>Participate in code joint testing and maintenance in production environment in the later period.</li>
 													</ul>
 												</li>
 												<li>Key Achievements:
 													<ul>
 														<li>Participate in bug fixing of project framework.</li>
-														<li>Participate in optimization of project code including
-															removing redundant codes, adjusting class structure about
-															code and solving thread security by threadLocal.</li>
-														<li>Participate in reconstruction of project including design of
-															underlying structure and code migrating.</li>
+														<li>Participate in optimization of project code including removing redundant codes, adjusting class structure about code and solving thread security by threadLocal.</li>
+														<li>Participate in reconstruction of project including design of underlying structure and code migrating.</li>
 													</ul>
 												</li>
-											</ol>
-										</div>
+											</ul>
+										</li>
+									</ul>
+							
+								</div>
+							</li>
+							<li id="project">
+								<div>
+									<div>
+										<div class="iconfont icon-xiangmu"></div>
 									</div>
-								</dd>
-							</dl>
-						</div>
-
-						<!--项目经验-->
-
-						<div class="outexperDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice"
-							notice-key="project" id="resume_project" for-key="project">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="project"
-										style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_project">Project experience</div>
-										<div class="Border resume_line" for-id="project"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2021.4-Now
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">independent
-												</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Back-end
-													development</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Name: Back-end development of "ideas"</p>
-												<p>Responsibilities: Responsible for market research, vertical demand
-													division and analysis, database structure design, back-end technical
-													architecture selection, and code interface development.</p>
-												<p>Technologies: SpringBoot+SpringMVC+Mybatis+Mysql+Shiro+Redis, and try
-													to use Nacos and openFeign</p>
-											</div>
-											<p><a target="_blank"
-													href="https://github.com/qgao233/qgaoBackEnd">https://github.com/qgao233/qgaoBackEnd</a>
-											</p>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2021.6-Now
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">independent
-												</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">Front-end web
-													development</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Name: Front-end web development of "ideas"</p>
-												<p>Responsibilities: Responsible for interface UI design, structure
-													construction, facade development and connect with the back-end
-													interface.</p>
-												<p>Technologies: html5+css+js+jquery</p>
-											</div>
-											<p><a target="_blank"
-													href="https://github.com/qgao233/qgaoWebPage">https://github.com/qgao233/qgaoWebPage</a>
-											</p>
-										</div>
-									</div>
-								</dd>
-								<dd class="resume_append_area">
-									<div class="baseContent baseDel resume_item_items resume_delete_area">
-										<div class="delete resume_delete"></div>
-										<div class="conTitle">
-											<span class="conTitle_time">
-												<div class="resume_time baseBorder" contenteditable="true">2021.9-Now
-												</div>
-											</span>
-											<span class="conTitle_company">
-												<div class="resume_unit baseBorder" contenteditable="true">independent
-												</div>
-											</span>
-											<span class="conTitle_post">
-												<div class="resume_job baseBorder" contenteditable="true">App
-													development (android side)</div>
-											</span>
-										</div>
-										<div class="baseDel_ resume_delete_area_">
-											<div class="delete_ resume_delete_"></div>
-											<div class="conDisc baseBorder resume_value" contenteditable="true"
-												data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">
-												<p>Name: Android development of "ideas"</p>
-												<p>Responsibilities: Responsible for technology selection, framework
-													construction, ui design, interface development, and connect with
-													back-end interfaces.</p>
-												<p>Technologies: react-native+redux</p>
-											</div>
-											<p><a target="_blank"
-													href="https://github.com/qgao233/qgaoApp">https://github.com/qgao233/qgaoApp</a>
-											</p>
-										</div>
-									</div>
-								</dd>
-							</dl>
-						</div>
-
-						<!--自我总结-->
-						<div class="selfDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="self"
-							id="resume_self" for-key="self">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="self" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_self">Self-summary</div>
-										<div class="Border resume_line" for-id="self"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd>
-									<div class="baseContent">
-										<div class="conDisc baseBorder resume_lang_self_value resume_value"
-											contenteditable="true" data-toggle="tooltip" data-placement="top"
-											title="复制粘贴文字请右键-粘贴为纯文本">
-											<ul>
+									<div>Project experience</div>
+								</div>
+								<div>
+									<ul>
+										<li>
+											<ul class="list">
 												<li>
-													Not only back-end but also front-end development experience,
-													familiar with related platforms and tools;
-												</li>
-												<li>
-													Good basic knowledge;
-												</li>
-												<li>
-													BS related major, Technical driven, with good communication and
-													logical thinking;
-												</li>
-												<li>
-													Positive English user, adapt to English working environment;
-												</li>
-												<li>
-													Dependent Personal Project: IDEAs, dedicated to providing ideas for
-													different groups of people (Full stack including web interface,
-													back-end development and mobile development)
+													<div class="date">2021.4-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">Back-end development</div>
 												</li>
 											</ul>
-										</div>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: SpringBoot+SpringMVC+Mybatis+Mysql+Shiro+Redis, and try to use Nacos and openFeign</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for market research, vertical demand division and analysis.</li>
+														<li>Responsible for database structure design, back-end technical architecture selection.</li>
+														<li>Responsible for code interface development.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoBackEnd">https://github.com/qgao233/qgaoBackEnd</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2021.6-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">Front-end web development</div>
+												</li>
+											</ul>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: html5+css+js+jquery</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for interface UI design, structure construction.</li>
+														<li>Responsible for facade development and connect with the back-end interface.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoWebPage">https://github.com/qgao233/qgaoWebPage</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2021.9-Now</div>
+													<div class="location">Personal</div>
+													<div class="head-title">App development (android side)</div>
+												</li>
+											</ul>
+											<div>IDEAs</div>
+											<ul class="special-list">
+												<li>Technologies: react-native+redux</li>
+												<li>Main tasks:
+													<ul>
+														<li>Responsible for technology selection, framework construction, ui design.</li>
+														<li>Responsible for facade development and connect with the back-end interface.</li>
+													</ul>
+												</li>
+												<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoApp">https://github.com/qgao233/qgaoApp</a></li>
+											</ul>
+										</li>
+										<li>
+											<ul class="list">
+												<li>
+													<div class="date">2022.4.11-2022.6</div>
+													<div class="location">Shanghai Citigroup Services and Technology (China) Co. Ltd.</div>
+													<div class="head-title">Back-end development</div>
+												</li>
+											</ul>
+											<div>Input Gathering</div>
+											<ul class="special-list">
+												<li>Technologies: Java, Spring, Oracle</li>
+												<li>Main tasks:
+													<ul>
+														<li>Confirm requirements by use of jira;</li>
+														<li>Complete back-end development;</li>
+														<li>Joint debugging with other projects;</li>
+														<li>Complete bug fixing during dev testing;</li>
+														<li>Code commitment;</li>
+														<li>Follow-up code maintenance.</li>
+													</ul>
+												</li>
+												<li>Key Achievements:
+													<ul>
+														<li>Familiar with the complete project process.</li>
+														<li>Optimize the project, follow the design development in the project, and get used to project review after the project.</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+							
+								</div>
+							</li>
+							<li id="summary">
+								<div>
+									<div>
+										<div class="iconfont icon-zongjie"></div>
 									</div>
-								</dd>
-							</dl>
-						</div>
-						<!--自我评价-->
-
-						<div class="selfDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="self"
-							id="resume_self" for-key="self">
-							<dl>
-								<dt> <a class="resume_icon_diy icon wbdfont" for-id="self" style="font-size:none"></a>
-									<span>
-										<div class="resume_lang_self">Self-evaluation</div>
-										<div class="Border resume_line" for-id="self"
-											style="width:668px;border-top-style:solid;border-top-width:2px;"></div>
-									</span>
-								</dt>
-								<dd>
-									<div class="baseContent">
-										<div class="conDisc baseBorder resume_lang_self_value resume_value"
-											contenteditable="true" data-toggle="tooltip" data-placement="top"
-											title="复制粘贴文字请右键-粘贴为纯文本">
-											<p>I have a down-to-earth, hard-working and serious research spirit. In both
-												the undergraduate and postgraduate stages, I can find out the problems
-												that already exist in the project in time, and solve them in advance
-												through the relevant knowledge I already know. Even if there are
-												temporary problems, I can independently and quickly locate the problem
-												and solve it quickly and effectively.</p>
-										</div>
-										<p><a target="_blank"
-												href="https://github.com/qgao233/qgaoStudyNotes">https://github.com/qgao233/qgaoStudyNotes</a>
-										</p>
+									<div>Self-summary</div>
+								</div>
+								<div>
+									<ul class="special-list">
+										<li>Not only back-end but also front-end development experience, familiar with related platforms and tools;</li>
+										<li>Good basic knowledge;</li>
+										<li>BS related major, Technical driven, with good communication and logical thinking;</li>
+										<li>Positive English user, adapt to English working environment;</li>
+										<li>Dependent Personal Project: IDEAs, dedicated to providing ideas for different groups of people (Full stack including web interface, back-end development and mobile development).</li>
+									</ul>
+								</div>
+							</li>
+							<li id="evaluation">
+								<div>
+									<div>
+										<div class="iconfont icon-pingjia"></div>
 									</div>
-								</dd>
-							</dl>
-						</div>
+									<div>Self-evaluation</div>
+								</div>
+								<div style="text-align: justify;">
+									I have a down-to-earth, hard-working and serious research spirit. In both the undergraduate and postgraduate stages, I can find out the problems that already exist in the project in time, and solve them in advance through the relevant knowledge I already know. Even if there are temporary problems, I can independently and quickly locate the problem and solve it quickly and effectively.
+								</div>
+								<ul class="special-list">
+									<li>Visit:&nbsp;<a target="_blank" href="https://github.com/qgao233/qgaoStudyNotes">https://github.com/qgao233/qgaoStudyNotes</a></li>
+								</ul>
+							</li>
+						</ul>
 					</div>
+					<div style="height:50px;"></div>
 				</div>
 			</div>
 		</div>
-		<div style="text-align:center;">
-
-		</div>
-
 	</body>
-
 </html>
