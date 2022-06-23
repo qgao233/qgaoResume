@@ -1,0 +1,79 @@
+{
+  "id": "3480138",
+  "name": "resume",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5392406",
+      "name": "评价",
+      "font_class": "pingjia",
+      "unicode": "e714",
+      "unicode_decimal": 59156
+    },
+    {
+      "icon_id": "6742357",
+      "name": "工作2",
+      "font_class": "gongzuo",
+      "unicode": "e687",
+      "unicode_decimal": 59015
+    },
+    {
+      "icon_id": "7542174",
+      "name": "24gf-school",
+      "font_class": "24gf-school",
+      "unicode": "e83d",
+      "unicode_decimal": 59453
+    },
+    {
+      "icon_id": "7791028",
+      "name": "学习",
+      "font_class": "xuexi",
+      "unicode": "e7f1",
+      "unicode_decimal": 59377
+    },
+    {
+      "icon_id": "12331690",
+      "name": "总结",
+      "font_class": "zongjie",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "12911876",
+      "name": "项目",
+      "font_class": "xiangmu",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "1029",
+      "name": "音乐",
+      "font_class": "yinle",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2506472",
+      "name": "乒乓球",
+      "font_class": "pingpangqiu",
+      "unicode": "ea74",
+      "unicode_decimal": 60020
+    },
+    {
+      "icon_id": "11195056",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "24105596",
+      "name": "羽毛球",
+      "font_class": "yumaoqiu",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    }
+  ]
+}
